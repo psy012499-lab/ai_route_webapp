@@ -26,8 +26,8 @@ from urllib3.util.retry import Retry
 # 네이버 API KEY
 # =========================================================
 
-CLIENT_ID = st.secrets["NAVER_CLIENT_ID"]
-CLIENT_SECRET = st.secrets["NAVER_CLIENT_SECRET"]
+NAVER_CLIENT_ID = st.secrets["NAVER_CLIENT_ID"]
+NAVER_CLIENT_SECRET = st.secrets["NAVER_CLIENT_SECRET"]
 
 # =========================================================
 # 컬럼명
