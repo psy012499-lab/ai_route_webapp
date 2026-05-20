@@ -10,10 +10,11 @@ import pandas as pd
 import requests
 import folium
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
+import streamlit as st
 
-load_dotenv()
+#load_dotenv()
 
 from math import radians, sin, cos, sqrt, atan2
 from functools import lru_cache
@@ -25,8 +26,8 @@ from urllib3.util.retry import Retry
 # 네이버 API KEY
 # =========================================================
 
-NAVER_CLIENT_ID = os.getenv("NAVER_CLIENT_ID")
-NAVER_CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET")
+CLIENT_ID = st.secrets["NAVER_CLIENT_ID"]
+CLIENT_SECRET = st.secrets["NAVER_CLIENT_SECRET"]
 
 # =========================================================
 # 컬럼명
